@@ -37,14 +37,13 @@ const HeroSection = () => {
             <SocialsRow />
           </div>
           <div>
-            <form method="get" action={"#contact"} className="px-6 inline-block w-full py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary via-wiretapmiddle to-secondary hover:bg-slate-200 text-white">
               <button
                 type="submit"
-                className=""
+                onClick={() => location.href = "#contact"}
+                className="px-6 inline-block w-full py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary via-wiretapmiddle to-secondary hover:bg-slate-200 text-white"
               >
                 Contact Me
               </button>
-            </form>
             <button
               onClick={() =>
                 window.open(
