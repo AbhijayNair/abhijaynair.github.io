@@ -40,7 +40,7 @@ const HeroSection = () => {
               <button
                 type="submit"
                 onClick={() => location.href = "#contact"}
-                className="px-6 inline-block w-full py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary via-wiretapmiddle to-secondary hover:bg-slate-200 text-white"
+                className="px-6 inline-block w-full py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary via-middle to-secondary hover:bg-slate-200 text-white"
               >
                 Contact Me
               </button>
@@ -51,7 +51,7 @@ const HeroSection = () => {
                   "_blank"
                 )
               }
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary via-wiretapmiddle to-secondary hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary via-middle to-secondary hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#141414] hover:bg-slate-800 rounded-full px-5 py-2">
                 Resume

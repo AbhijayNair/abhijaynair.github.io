@@ -26,7 +26,7 @@ const AboutSection = () => {
       </section>
 
       <section className="lg:py-20 py-10" id="education">
-        <div className="text-left text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-4xl sm:text-5xl lg:text-6xl lg:leading-snug font-semibold">
+        <div className="text-left text-middle text-4xl sm:text-5xl lg:text-6xl lg:leading-snug font-semibold">
           <h2>Education</h2>
         </div>
       </section>

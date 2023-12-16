@@ -9,7 +9,7 @@ const SkillsSection = () => {
       </div>
       <div className="container flex justify-around py-6">
         <div className="mx-3 py-2">
-          <h4 className="text-2xl text-wiretapmiddle text-center">
+          <h4 className="text-2xl text-middle text-center">
             Programming Languages
           </h4>
           <div className="grid grid-cols-2">

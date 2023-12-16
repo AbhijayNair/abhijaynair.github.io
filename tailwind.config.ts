@@ -17,9 +17,9 @@ const config: Config = {
     },
     colors: {
       ...colors,
-      wiretapmiddle:'#E94057',
-      primary:'#8A2387',
-      secondary:'#F27121',
+      primary:'#40E0D0',
+      middle:'#FF8C00',
+      secondary:'#FF0080',
     }
   },
   plugins: [],
