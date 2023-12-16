@@ -8,7 +8,7 @@ const SkillsSection = () => {
       </div>
       <div className='container flex justify-around py-6'>
         <div className="">
-          <h4 className='text-2xl text-wiretapmiddle'>Languages</h4>
+          <h4 className='text-2xl text-wiretapmiddle text-center'>Languages</h4>
           <ul className='flex justify-center flex-col text-center py-3'>
             <li>JavaScript</li>
             <li>Python</li>
@@ -18,7 +18,7 @@ const SkillsSection = () => {
           </ul>
         </div>
         <div className="">
-          <h4 className='text-2xl text-secondary'>Frameworks & Tools</h4>
+          <h4 className='text-2xl text-secondary text-center'>Frameworks & Tools</h4>
           <ul className='flex justify-center flex-col text-center py-3'>
             <li>Docker</li>
             <li>AWS</li>
