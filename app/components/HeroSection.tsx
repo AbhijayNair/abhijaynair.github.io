@@ -59,7 +59,7 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="col-span-4 px-1 py-2">
+        <div className="col-span-4 px-1 py-2 mt-4">
           <Image className="" width={512} height={512} src={"./heroimage.png"} alt="jay AI generated image"/>
         </div>
       </div>
