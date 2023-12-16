@@ -1,11 +1,10 @@
-"use client"
-import React, { useState } from "react";
+"use client";
+import React from "react";
 
 const ContactSection = () => {
-
-    const handleSubmit = async (e) => {
-        window.open(`mailto:${process.env.FROM_EMAIL}?subject=${e.target.value.subject}&body=${e.target.value.message}`, '_self')
-    }
+  const handleSubmit = (e) => {
+    window.open("mailto:me@abhijaynair.com?subject="+e.target.subject.value+"&body="+e.target.message.value, '_blank')
+  };
 
   return (
     <section
@@ -26,57 +25,63 @@ const ContactSection = () => {
       <div>
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-white block text-sm font-medium mb-2"
-              >
-                Your email
-              </label>
-              <input
-                className="bg-[#18191E] border border-[#33353F] placeholder-gray text-gray-100 text-sm rounded-lg block w-full p-3"
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="johndoe@example.com"
-              />
+            <label
+              htmlFor="email"
+              className="text-white block text-sm font-medium mb-2"
+            >
+              Your email
+            </label>
+            <input
+              className="bg-[#18191E] border border-[#33353F] placeholder-gray text-gray-100 text-sm rounded-lg block w-full p-3"
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="johndoe@example.com"
+            />
           </div>
 
           <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block text-sm font-medium mb-2"
-              >
-                Subject
-              </label>
-              <input
-                className="bg-[#18191E] border border-[#33353F] placeholder-gray text-gray-100 text-sm rounded-lg block w-full p-3"
-                type="text"
-                id="subject"
-                name="subject"
-                required
-                placeholder="Got some great news for you!"
-              />
+            <label
+              htmlFor="subject"
+              className="text-white block text-sm font-medium mb-2"
+            >
+              Subject
+            </label>
+            <input
+              className="bg-[#18191E] border border-[#33353F] placeholder-gray text-gray-100 text-sm rounded-lg block w-full p-3"
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              placeholder="Got some great news for you!"
+            />
           </div>
 
           <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-white block text-sm font-medium mb-2"
-              >
-                Message
-              </label>
-              <textarea
-                className="bg-[#18191E] border border-[#33353F] placeholder-gray text-gray-100 text-sm rounded-lg block w-full p-3"
-                id="message"
-                name="message"
-                rows={3}
-                maxLength={512}
-                required
-                placeholder="Hi Jay! Let's chat about..."
-              />
+            <label
+              htmlFor="message"
+              className="text-white block text-sm font-medium mb-2"
+            >
+              Message
+            </label>
+            <textarea
+              className="bg-[#18191E] border border-[#33353F] placeholder-gray text-gray-100 text-sm rounded-lg block w-full p-3"
+              id="message"
+              name="message"
+              rows={3}
+              maxLength={512}
+              required
+              placeholder="Hi Jay! Let's chat about..."
+            />
           </div>
-          <button className="bg-primary hover:opacity-80 text-white font-medium py-3 px-5 rounded-lg w-full" type="submit">Send Message</button>
+          <a href=""></a>
+          <button
+            className="bg-primary hover:opacity-80 text-white font-medium py-3 px-5 rounded-lg w-full"
+            type="submit"
+          >
+            Send Message
+          </button>
         </form>
       </div>
     </section>
