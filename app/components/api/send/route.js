@@ -18,9 +18,8 @@ export async function POST(req, res) {
         <p>{message}</p>
       </>,
     });
-
-    return Response.json(data);
+    return NextResponse.json(data);
   } catch (error) {
-    return Response.json({ error });
+    return NextResponse.json({ error });
   }
 }
