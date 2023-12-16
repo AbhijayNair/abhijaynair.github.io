@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import SocialsRow from "./SocialsRow";
+import Link from "next/link";
 
 import { TypeAnimation } from "react-type-animation";
 
@@ -36,14 +37,14 @@ const HeroSection = () => {
             <SocialsRow />
           </div>
           <div>
-            <button
-              onClick={() =>
-                window.open("mailto:me@abhijaynair.com?subject=Hey There!", '_self')
-              }
-              className="px-6 inline-block w-full py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary via-wiretapmiddle to-secondary hover:bg-slate-200 text-white"
-            >
-              Contact Me
-            </button>
+            <form method="get" action={"#contact"} className="px-6 inline-block w-full py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary via-wiretapmiddle to-secondary hover:bg-slate-200 text-white">
+              <button
+                type="submit"
+                className=""
+              >
+                Contact Me
+              </button>
+            </form>
             <button
               onClick={() =>
                 window.open(
@@ -60,7 +61,13 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="col-span-4 px-1 py-2 mt-4">
-          <Image className="" width={512} height={512} src={"./heroimage.png"} alt="jay AI generated image"/>
+          <Image
+            className=""
+            width={512}
+            height={512}
+            src={"./heroimage.png"}
+            alt="jay AI generated image"
+          />
         </div>
       </div>
     </section>

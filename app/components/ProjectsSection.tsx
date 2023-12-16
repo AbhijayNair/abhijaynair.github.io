@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const ProjectsSection = () => {
   return (
-    <section className='text-white' id='projects'>
-    <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div>
+    <section className="lg:py-20" id="projects">
+      <div className="text-center text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-4xl sm:text-5xl lg:text-6xl lg:leading-snug font-semibold">
         <h2>Projects</h2>
       </div>
-    </div></section>
-  )
-}
+    </section>
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;
