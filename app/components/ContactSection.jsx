@@ -3,34 +3,8 @@ import React, { useState } from "react";
 
 const ContactSection = () => {
 
-    const [isMessageSent, setIsMessageSent] = useState(false)
-
-
     const handleSubmit = async (e) => {
-        e.preventDefault()
-        const data = JSON.stringify({
-            email: e.target.email.value,
-            subject: e.target.subject.value,
-            message: e.target.message.value
-        })
-        const endpoint = "/api/send"
-
-        const options = {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: data
-        }
-
-        const response = await fetch(endpoint, options)
-        if (response.status === 200) {
-            setIsMessageSent(true)
-            setTimeout(() => {
-                setIsMessageSent(false)
-            }, 3000);
-        }
-        
+        window.open(`mailto:${process.env.FROM_EMAIL}?subject=${e.target.value.subject}&body=${e.target.value.message}`, '_self')
     }
 
   return (
@@ -104,7 +78,6 @@ const ContactSection = () => {
           </div>
           <button className="bg-primary hover:opacity-80 text-white font-medium py-3 px-5 rounded-lg w-full" type="submit">Send Message</button>
         </form>
-        {isMessageSent && <p className="text-green-500 text-sm mt-2">Your message has been sent!</p>}
       </div>
     </section>
   );
