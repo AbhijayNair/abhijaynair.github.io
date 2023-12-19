@@ -20,7 +20,7 @@ export function ingenid(
           </h6>
           {ingenIdVisible && (
             <div className="flex flex-col px-2 py-1">
-              <div className="flex flex-row space-betwwen rounded-md w-fit">
+              <div className="flex flex-row justify-between rounded-md w-fit">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-map-pin"
@@ -50,10 +50,10 @@ export function ingenid(
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-row space-between p-2 space-x-2 ">
-                <div className="text-slate-400 border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-secondary hover:text-white">React</div>
-                <div className="text-slate-400 border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-middle hover:text-black">Docker</div>
-                <div className="text-slate-400 border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-primary hover:text-black">MongoDB</div>
+              <div className="grid grid-cols-3 sm:grid-cols-12 space-x-1 space-y-1 w-fit">
+                <div className="text-slate-400 col-span-4 place-self-center border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-secondary hover:text-white">React</div>
+                <div className="text-slate-400 col-span-4 place-self-center border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-middle hover:text-black">Docker</div>
+                <div className="text-slate-400 col-span-4 place-self-center border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-primary hover:text-black">MongoDB</div>
               </div>
             </div>
           )}

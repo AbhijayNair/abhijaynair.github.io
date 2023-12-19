@@ -20,7 +20,7 @@ export function rit(
           </h6>
           {ritVisible && (
             <div className="flex flex-col px-2 py-1">
-              <div className="flex flex-row space-betwwen rounded-md w-fit">
+              <div className="flex flex-row justify-between rounded-md w-fit">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-map-pin"
