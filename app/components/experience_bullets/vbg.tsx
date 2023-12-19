@@ -49,7 +49,7 @@ export function vbg(
                 </ul>
               </div>
               <div className="grid grid-cols-3 sm:grid-cols-12 space-x-1 space-y-1 w-fit">
-                <div className="text-slate-400 col-span-4 place-self-center border border-slate-500 rounded-3xl w-fit py-2 px-6 text-center font-medium hover:bg-primary hover:text-black">
+                <div className="text-slate-400 col-span-4 place-self-center border border-slate-500 rounded-3xl w-fit py-2 px-6 text-center font-medium hover:bg-secondary hover:text-white">
                   Flutter
                 </div>
                 <div className="text-slate-400 col-span-4 place-self-center border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-middle hover:text-black">
