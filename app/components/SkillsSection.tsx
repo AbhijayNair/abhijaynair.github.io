@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SkillsSection = () => {
   return (
-    <section className="lg:py-20 py-14" id="skills">
+    <section className="lg:py-16 py-14" id="skills">
       <div className="text-center text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-4xl sm:text-5xl lg:text-6xl lg:leading-snug font-semibold">
         <h2>Skills</h2>
       </div>
