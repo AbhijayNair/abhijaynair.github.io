@@ -52,11 +52,17 @@ export function tcs(
                   </li>
                 </ul>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-12 space-x-1 space-y-1 w-fit">
-                <div className="text-slate-400 col-span-4 place-self-center border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-secondary hover:text-white">SQL</div>
-                <div className="text-slate-400 col-span-4 place-self-center border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-middle hover:text-black">Git</div>
-                <div className="text-slate-400 col-span-4 place-self-center border border-slate-500 rounded-3xl w-fit py-2 px-4 text-center font-medium hover:bg-primary hover:text-black">Excel</div>
-              </div>
+              <ul className="flex flex-row justify-between w-fit space-x-2">
+                <li className="text-slate-400 col-span-4 border border-slate-500 rounded-3xl w-fit hover:bg-secondary hover:text-white">
+                  <div className="py-2 px-6 text-center font-medium">SQL</div>
+                </li>
+                <li className="text-slate-400 col-span-4 border border-slate-500 rounded-3xl w-fit hover:bg-middle hover:text-black">
+                  <div className="py-2 px-6 text-center font-medium">Git</div>
+                </li>
+                <li className="text-slate-400 col-span-4 border border-slate-500 rounded-3xl w-fit font-medium hover:bg-primary hover:text-black">
+                  <div className="py-2 px-6 text-center font-medium">Excel</div>
+                </li>
+              </ul>
             </div>
           )}
         </div>
