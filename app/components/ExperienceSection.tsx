@@ -9,9 +9,9 @@ import { uMum } from "./experience_bullets/uMum";
 const ExperienceSection = () => {
   const [uMumVisible, setUMumVisible] = useState(false);
   const [ritVisible, setRitVisible] = useState(false);
-  const [tcsVisible, setTcsVisible] = useState(true);
-  const [vbgVisible, setVbgVisible] = useState(true);
-  const [ingenIdVisible, setIngenIdVisible] = useState(true);
+  const [tcsVisible, setTcsVisible] = useState(false);
+  const [vbgVisible, setVbgVisible] = useState(false);
+  const [ingenIdVisible, setIngenIdVisible] = useState(false);
 
   return (
     <section className="lg:py-20 py-10" id="experience">
