@@ -22,11 +22,8 @@ const ExperienceSection = () => {
         <div className="py-4">
           <ul className="flex flex-col space-y-5">
             {ingenid(setIngenIdVisible, ingenIdVisible)}
-
             {vbg(setVbgVisible, vbgVisible)}
-
             {tcs(setTcsVisible, tcsVisible)}
-
             {rit(setRitVisible, ritVisible)}
             {uMum(setUMumVisible, uMumVisible)}
           </ul>
