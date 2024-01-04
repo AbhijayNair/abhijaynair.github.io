@@ -21,6 +21,7 @@ export default function RootLayout({
         <title>Abhijay Nair</title>
         <meta property="og:title" content="Jay Nair" />
         <meta property="og:description" content="Get to know more about Jay" />
+        <meta property="description" content="Get to know more about Jay" />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
