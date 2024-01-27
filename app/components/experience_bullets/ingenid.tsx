@@ -13,7 +13,7 @@ export function ingenid(
       <div className="flex flex-row justify-between">
         <div className="flex flex-col">
           <h4 className="col-span-4 px-2 text-2xl font-semibold text-middle">
-            IngendID LLC
+            IngenID LLC
           </h4>
           <h6 className="col-span-4 px-2 text-gray-400">
             Application Development Intern
