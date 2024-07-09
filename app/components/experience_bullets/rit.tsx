@@ -52,7 +52,7 @@ export function rit(
         <div className="flex flex-col justify-center">
           <div className="flex flex-row">
             <h6 className="col-span-4 invisible lg:visible px-2 text-gray-300">
-              2021-Present
+              2021-2024
             </h6>
 
             <div
