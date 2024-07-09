@@ -15,7 +15,7 @@ export function vbg(
           <h4 className="px-2 text-2xl font-semibold text-middle">
             Voice Biometrics Group
           </h4>
-          <h6 className="px-2 text-gray-400">Software Engineering Intern</h6>
+          <h6 className="px-2 text-gray-400">Software Engineer Intern</h6>
           {vbgVisible && (
             <div className="flex flex-col py-1">
               <div className="flex flex-row justify-around rounded-md w-fit">
