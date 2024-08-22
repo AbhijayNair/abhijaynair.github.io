@@ -5,7 +5,7 @@ export const bloodBankProject = (
   <div
     className="hover:border hover:border-[#33353F] rounded-lg w-full px-4 py-4 hover:bg-[#18191E]"
     onClick={() =>
-      window.open("https://github.com/AbhijayNair/Blood-Bank_App", "_blank")
+      window.open("https://github.com/AbhijayNair/tic-tac-toe.git", "_blank")
     }
   >
     <div className="flex flex-col flex-wrap space-y-2">
@@ -19,19 +19,18 @@ export const bloodBankProject = (
         </svg>
       </div>
       <h4 className="text-center text-2xl font-semibold text-gray-400 ">
-        Blood Donation Campaign App
+        Noughts & Crosses
       </h4>
       <p className="text-left text-sm text-gray-600">
-        Developed a mobile app for android devices using Firebase cloud services
-        to enable real-time push notifications, instant messaging, user
-        registration.
+        An iOS-based game to play Tic-Tac-Toe against an expert AI using the minimax algorithm
+        with alpha-beta pruning.
       </p>
       <ul className="flex flex-row flex-wrap justify-center w-full space-x-2">
         <li className="text-slate-400 col-span-4 border border-slate-500 rounded-3xl w-fit mt-2 hover:bg-secondary hover:text-white">
-          <div className="py-2 px-6 text-center font-medium">Java</div>
+          <div className="py-2 px-6 text-center font-medium">Swift</div>
         </li>
         <li className="text-slate-400 col-span-4 border border-slate-500 rounded-3xl w-fit mt-2 hover:bg-middle hover:text-black">
-          <div className="py-2 px-6 text-center font-medium">Firebase</div>
+          <div className="py-2 px-6 text-center font-medium">SwiftUI</div>
         </li>
       </ul>
     </div>
