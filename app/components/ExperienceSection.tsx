@@ -22,7 +22,7 @@ const ExperienceSection = () => {
         </h2>
         <div className="py-4">
           <ul className="flex flex-col space-y-5">
-            {ingenid(setIngenIdFtVisible, ingenIdFtVisible)}
+            {ingenid_ft(setIngenIdFtVisible, ingenIdFtVisible)}
             {ingenid(setIngenIdVisible, ingenIdVisible)}
             {vbg(setVbgVisible, vbgVisible)}
             {tcs(setTcsVisible, tcsVisible)}
