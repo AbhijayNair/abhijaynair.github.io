@@ -5,7 +5,7 @@ export const potholeProject = (
   <div
     className="hover:border hover:border-[#33353F] rounded-lg w-full px-4 py-4 hover:bg-[#18191E] hover:shadow-lg"
     onClick={() =>
-      window.open("https://github.com/AbhijayNair/Pothole-Analyzer", "_blank")
+      window.open("https://github.com/AbhijayNair/tymr-apple-watch", "_blank")
     }
   >
     <div className="flex flex-col flex-wrap space-y-2">
@@ -19,19 +19,17 @@ export const potholeProject = (
         </svg>
       </div>
       <h4 className="text-center text-2xl font-semibold text-gray-400 ">
-        Pothole Analyzer for Damaged Roads
+        Tymr
       </h4>
       <p className="text-left text-sm text-gray-600">
-        Trained a CNN model to identify potholes from dashcam
-        footage and compute the dimensions of the pothole using computer vision
-        algorithms.
+      Tymr is a standalone watchOS application that helps you save time you spend at the gym working out by tracking your rest intervals.
       </p>
       <ul className="flex flex-row flex-wrap justify-center w-full space-x-2">
         <li className="text-slate-400 col-span-4 border border-slate-500 rounded-3xl w-fit mt-2 hover:bg-secondary hover:text-white">
-          <div className="py-2 px-6 text-center font-medium">Python</div>
+          <div className="py-2 px-6 text-center font-medium">Swift</div>
         </li>
         <li className="text-slate-400 col-span-4 border border-slate-500 rounded-3xl w-fit mt-2 hover:bg-middle hover:text-black">
-          <div className="py-2 px-6 text-center font-medium">TensorFlow</div>
+          <div className="py-2 px-6 text-center font-medium">HealthKit</div>
         </li>
       </ul>
     </div>
