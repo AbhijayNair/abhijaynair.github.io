@@ -1,7 +1,7 @@
 import React from "react";
-import { gaitProject } from "./projects/gaitProject";
-import { potholeProject } from "./projects/pothole";
-import { bloodBankProject } from "./projects/bloodBankProject";
+import { firstProject } from "./projects/firstProject";
+import { secondProject } from "./projects/secondProject";
+import { thirdProject } from "./projects/thirdProject";
 
 export const ProjectsSection = () => {
   return (
@@ -10,9 +10,9 @@ export const ProjectsSection = () => {
         <h2>Projects</h2>
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-12 space-x-2 space-y-2 p-2 mt-2">
-        <div className="col-span-4 place-self-center">{gaitProject}</div>
-        <div className="col-span-4 place-self-center"> {potholeProject}</div>
-        <div className="col-span-4 place-self-center"> {bloodBankProject}</div>
+        <div className="col-span-4 place-self-center">{firstProject}</div>
+        <div className="col-span-4 place-self-center"> {secondProject}</div>
+        <div className="col-span-4 place-self-center"> {thirdProject}</div>
       </div>
     </section>
   );

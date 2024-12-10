@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-export const bloodBankProject = (
+export const thirdProject = (
   <div
     className="hover:border hover:border-[#33353F] rounded-lg w-full px-4 py-4 hover:bg-[#18191E]"
     onClick={() =>
