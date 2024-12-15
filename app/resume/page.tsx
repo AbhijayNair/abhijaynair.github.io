@@ -10,7 +10,7 @@ export default function Resume() {
   useEffect(() => {
     const updatePdfHeight = () => {
       const windowHeight = window.innerHeight;
-      const footerHeight = 32; // Adjust this value based on your actual footer height
+      const footerHeight = 8; // Adjust this value based on your actual footer height
       const newHeight = windowHeight - footerHeight;
       setPdfHeight(newHeight);
     };
@@ -24,9 +24,9 @@ export default function Resume() {
       <main className="flex min-h-screen flex-col bg-[#141414]">
           <Suspense fallback={<>Loading...</>}>
           <main className="flex flex-col items-center bg-[#141414]">
-            <div className="w-full max-w-5xl overflow-hidden">
+            <div className="w-full max-w-5xl overflow-hidden bg-[#141414]">
               <iframe
-                src="./JayNair_resume.pdf"
+                src="./JayNair_resume.pdf#toolbar=1&navpanes=0&scrollbar=1&page=1&view=Fit"
                 className="w-full border-none"
                 style={{ height: `${pdfHeight}px` }}
                 title="Resume PDF"

@@ -8,6 +8,7 @@ import MenuOverlay from "./MenuOverlay";
 
 const NavLinks = [
   { title: "About", href: "#about" },
+  { title: "Resume", href: "/resume" },
 ];
 
 export const Navbar = () => {
