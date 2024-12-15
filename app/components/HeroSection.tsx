@@ -45,16 +45,10 @@ const HeroSection = () => {
                 Contact Me
               </button> */}
             <button
-              onClick={() =>
-                window.open(
-                  "https://drive.google.com/file/d/1J4bAhfhEcadOhS-wGRwNqL9WOcN8nfVU/view?usp=drive_link",
-                  "_blank"
-                )
-              }
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary via-middle to-secondary hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#141414] hover:bg-slate-800 rounded-full px-5 py-2">
-                Resume
+                <Link href="/resume">Resume</Link>
               </span>
             </button>
           </div>
