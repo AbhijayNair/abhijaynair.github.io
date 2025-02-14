@@ -48,6 +48,15 @@ export function ingenid(
                     authentication system to be deployed on the Bubble.io
                     platform
                   </li>
+                  <li>
+                    Developed a cross-platform mobile app to augment their
+                    supported platforms to perform voice authentication (from
+                    the previous IVR and WebRTC-based systems).
+                  </li>
+                  <li>
+                    Redesigned their internal tools architecture and developed
+                    websites using the MERN stack
+                  </li>
                 </ul>
               </div>
               <ul className="flex flex-row flex-wrap justify-center w-fit space-x-2">
