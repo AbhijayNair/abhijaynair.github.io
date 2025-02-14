@@ -16,7 +16,7 @@ export function ingenid(
             IngenID LLC
           </h4>
           <h6 className="col-span-4 px-2 text-gray-400">
-            Software Development Engineer Intern
+            Software Engineer Intern
           </h6>
           {ingenIdVisible && (
             <div className="flex flex-col px-2 py-1">
