@@ -76,7 +76,7 @@ export function ingenid(
         <div className="flex flex-col justify-center">
           <div className="flex flex-row">
             <h6 className="col-span-4 invisible lg:visible px-2 text-gray-300">
-              2023
+              2022-2023
             </h6>
             <div
               className={`transition-all transform ${
