@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
+    basePath: "/abhijaynair.github.io"
     images: {
         unoptimized: true
     },
