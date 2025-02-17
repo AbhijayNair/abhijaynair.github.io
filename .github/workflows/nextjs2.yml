@@ -55,7 +55,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
 
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-artifact@v3  # Changed to ensure compatibility
+        uses: actions/upload-artifact@v4  # Changed to ensure compatibility
         with:
           name: github-pages  # Same artifact name used in deploy step
           path: out/
@@ -68,7 +68,7 @@ jobs:
     needs: build
     steps:
       - name: Download artifact for GitHub Pages
-        uses: actions/download-artifact@v3  # Ensure version is compatible
+        uses: actions/download-artifact@v4  # Ensure version is compatible
         with:
           name: github-pages  # The same name as the artifact uploaded
           path: ./out  # Download into the "out" folder
