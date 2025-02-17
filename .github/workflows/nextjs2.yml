@@ -51,9 +51,6 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
-      - name: Configure for static export
-        run: echo "output: 'export'" >> next.config.js
-
       - name: Export static files (no longer using next export)
         run: |
           # Ensure static export files are placed in the 'out' directory.
