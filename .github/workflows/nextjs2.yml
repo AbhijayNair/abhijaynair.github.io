@@ -51,10 +51,25 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
+      - name: Configure for static export
+        run: echo "output: 'export'" >> next.config.js
+
+      - name: Export static files (no longer using next export)
+        run: |
+          # Ensure static export files are placed in the 'out' directory.
+          mkdir -p ./out
+          cp -r ./.next/static ./out/
+
+      - name: Clean up any symlinks or large files in out/
+        run: |
+          find ./out -type l -exec rm {} \;  # Remove symlinks
+          find ./out -type f -name "*.log" -exec rm {} \;  # Remove unnecessary log files
+          du -sh ./out  # Check size after cleanup
+
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-artifact@v4  # Changed to ensure compatibility
+        uses: actions/upload-artifact@v4
         with:
-          name: github-pages  # Same artifact name used in deploy step
+          name: github-pages
           path: out/
 
   deploy:
@@ -65,11 +80,11 @@ jobs:
     needs: build
     steps:
       - name: Download artifact for GitHub Pages
-        uses: actions/download-artifact@v4  # Ensure version is compatible
+        uses: actions/download-artifact@v4
         with:
-          name: github-pages  # The same name as the artifact uploaded
-          path: ./out  # Download into the "out" folder
+          name: github-pages
+          path: ./out
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # Use latest deploy-pages action
+        uses: actions/deploy-pages@v4
