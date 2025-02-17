@@ -51,23 +51,26 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
-      - name: Export static files (no longer using next export)
+      - name: Export static files
         run: |
           # Ensure static export files are placed in the 'out' directory.
           mkdir -p ./out
           cp -r ./.next/static ./out/
 
-      - name: Clean up any symlinks or large files in out/
+      - name: Remove symlinks and check file size
         run: |
-          find ./out -type l -exec rm {} \;  # Remove symlinks
-          find ./out -type f -name "*.log" -exec rm {} \;  # Remove unnecessary log files
-          du -sh ./out  # Check size after cleanup
+          # Remove symlinks from the out directory
+          find ./out -type l -exec rm {} \;
+          # Remove unnecessary log files
+          find ./out -type f -name "*.log" -exec rm {} \;
+          # Check the size of the directory
+          du -sh ./out
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: out/
+          path: ./out/
 
   deploy:
     environment:
