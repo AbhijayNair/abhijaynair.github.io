@@ -36,22 +36,6 @@ const HeroSection = () => {
           <div className="inline-block">
             <SocialsRow />
           </div>
-          <div>
-              {/* <button
-                type="submit"
-                onClick={() => location.href = "#contact"}
-                className="px-6 inline-block w-full py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary via-middle to-secondary hover:bg-slate-200 text-white"
-              >
-                Contact Me
-              </button> */}
-            <button
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary via-middle to-secondary hover:bg-slate-800 text-white mt-3"
-            >
-              <span className="block bg-[#141414] hover:bg-slate-800 rounded-full px-5 py-2">
-                <Link href="/resume">Resume</Link>
-              </span>
-            </button>
-          </div>
         </div>
         <div className="col-span-4 px-1 py-2 mt-4 ">
           <div className="bg-black bg-opacity-20 rounded-full w-full sm:w-fit">

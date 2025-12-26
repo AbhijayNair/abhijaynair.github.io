@@ -16,11 +16,11 @@ const ContactSection = () => {
           Let&apos;s Chat!
         </h2>
         <br />
-        <p className="text-left my-2 mb-4 max-w-md">
+        {/* <p className="text-left my-2 mb-4 max-w-md">
           I am currently looking for new opportunities as a Software Developer,
           so if you want to chat about that or just want to say hi, send me a
           message. I will try my best to get back to you as soon as possible!
-        </p>
+        </p> */}
       </div>
       <div>
         <form className="flex flex-col" onSubmit={handleSubmit}>
