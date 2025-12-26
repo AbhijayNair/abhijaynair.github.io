@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { ingenid } from "./experience_bullets/ingenid";
-import { vbg } from "./experience_bullets/vbg";
 import { rit } from "./experience_bullets/rit";
 import { tcs } from "./experience_bullets/tcs";
 import { uMum } from "./experience_bullets/uMum";
@@ -11,7 +10,6 @@ const ExperienceSection = () => {
   const [uMumVisible, setUMumVisible] = useState(false);
   const [ritVisible, setRitVisible] = useState(false);
   const [tcsVisible, setTcsVisible] = useState(false);
-  const [vbgVisible, setVbgVisible] = useState(false);
   const [ingenIdVisible, setIngenIdVisible] = useState(false);
   const [ingenIdFtVisible, setIngenIdFtVisible] = useState(false)
   return (
@@ -24,7 +22,6 @@ const ExperienceSection = () => {
           <ul className="flex flex-col space-y-5">
             {ingenid_ft(setIngenIdFtVisible, ingenIdFtVisible)}
             {ingenid(setIngenIdVisible, ingenIdVisible)}
-            {vbg(setVbgVisible, vbgVisible)}
             {tcs(setTcsVisible, tcsVisible)}
             {rit(setRitVisible, ritVisible)}
             {uMum(setUMumVisible, uMumVisible)}

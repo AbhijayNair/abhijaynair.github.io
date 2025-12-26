@@ -16,7 +16,7 @@ export function ingenid(
             IngenID LLC
           </h4>
           <h6 className="col-span-4 px-2 text-gray-400">
-            Software Development Engineer Intern
+            Software Engineer Intern
           </h6>
           {ingenIdVisible && (
             <div className="flex flex-col px-2 py-1">
@@ -48,6 +48,15 @@ export function ingenid(
                     authentication system to be deployed on the Bubble.io
                     platform
                   </li>
+                  <li>
+                    Developed a cross-platform mobile app to augment their
+                    supported platforms to perform voice authentication (from
+                    the previous IVR and WebRTC-based systems).
+                  </li>
+                  <li>
+                    Redesigned their internal tools architecture and developed
+                    websites using the MERN stack
+                  </li>
                 </ul>
               </div>
               <ul className="flex flex-row flex-wrap justify-center w-fit space-x-2">
@@ -67,7 +76,7 @@ export function ingenid(
         <div className="flex flex-col justify-center">
           <div className="flex flex-row">
             <h6 className="col-span-4 invisible lg:visible px-2 text-gray-300">
-              2023
+              2022-2023
             </h6>
             <div
               className={`transition-all transform ${
