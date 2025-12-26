@@ -66,7 +66,7 @@ export function ingenid_ft(
         <div className="flex flex-col justify-center">
           <div className="flex flex-row">
             <h6 className="col-span-4 invisible lg:visible px-2 text-gray-300">
-              2024-Present
+              2024-2025
             </h6>
             <div
               className={`transition-all transform ${
